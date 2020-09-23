@@ -187,7 +187,7 @@ rm(Summer_Peak_Energy_Rate, Summer_Off_Peak_Energy_Rate, Summer_Super_Off_Peak_E
 
 # Get wholesale price data
 setwd("~/Desktop/SDG&E JARP/Wholesale Price Data/Clean Wholesale Price Data")
-Clean_SDGE_RT5M_LMP <- readRDS("Clean_SDGE_RT5M_LMP.rds")
+Clean_SDGE_RT5M_LMP <- readRDS("Clean_SDGE_RT5M_LMP_2019_15_min.rds")
 
 SDGE_AL_TOU_RTP <- SDGE_AL_TOU_RTP %>%
   left_join(Clean_SDGE_RT5M_LMP, by = "Date_Time")

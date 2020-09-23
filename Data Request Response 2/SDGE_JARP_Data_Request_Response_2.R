@@ -122,7 +122,7 @@ rm(revenueReductionRES, totalRevenueReductionRES, perCustomerRevenueReductionRES
 # There are only 41 intervals (6.8333% of the total) with both Top 600 LMPs as well as nonzero C-CPP adder values.
 # There are 559 intervals with LMPs in the top 600 but no C-CPP adder, and 559 intervals with nonzero C-CPP adder vallues but with LMPs not in the top 600.
 
-Clean_SDGE_RT5M_LMP <- readRDS(file.path(Wholesale_Price_WD, "Clean_SDGE_RT5M_LMP.rds"))
+Clean_SDGE_RT5M_LMP <- readRDS(file.path(Wholesale_Price_WD, "Clean_SDGE_RT5M_LMP_2019_15_min.rds"))
 
 highest600LMPs2019 <- Clean_SDGE_RT5M_LMP %>%
   top_n(n = 600, wt = LMP_RT5M)
